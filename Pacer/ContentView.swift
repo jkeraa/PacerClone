@@ -7,19 +7,24 @@
 
 import SwiftUI
 
+import CoreMotion
+
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+     
+    var x = PedometerManager()
+    private func initializePedometer() {
+        
     }
+    
+    var body: some View {
+        
+        TabBarView()
+    
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }

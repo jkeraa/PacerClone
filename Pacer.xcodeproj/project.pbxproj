@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02D5C712926971600CDB455 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D5C702926971600CDB455 /* TabBarView.swift */; };
+		D02D5C732926980800CDB455 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D5C722926980800CDB455 /* StatisticsView.swift */; };
+		D02D5C752926984800CDB455 /* PedometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D5C742926984800CDB455 /* PedometerView.swift */; };
+		D03C3C06292BC87B00BE862B /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C3C05292BC87B00BE862B /* CircularProgressView.swift */; };
+		D03C3C0C292BD86600BE862B /* ProfileSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C3C0B292BD86600BE862B /* ProfileSelection.swift */; };
+		D03C3C0E292D46E000BE862B /* time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C3C0D292D46E000BE862B /* time.swift */; };
+		D05135642927A67600F043C5 /* PedometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05135632927A67600F043C5 /* PedometerManager.swift */; };
+		D05135662927DAF900F043C5 /* keysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05135652927DAF900F043C5 /* keysModel.swift */; };
 		D093EC8729240F1500D7147E /* PacerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D093EC8629240F1500D7147E /* PacerApp.swift */; };
 		D093EC8929240F1500D7147E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D093EC8829240F1500D7147E /* ContentView.swift */; };
 		D093EC8B29240F1600D7147E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D093EC8A29240F1600D7147E /* Assets.xcassets */; };
@@ -14,6 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D02D5C702926971600CDB455 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D02D5C722926980800CDB455 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		D02D5C742926984800CDB455 /* PedometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerView.swift; sourceTree = "<group>"; };
+		D03C3C05292BC87B00BE862B /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		D03C3C0B292BD86600BE862B /* ProfileSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelection.swift; sourceTree = "<group>"; };
+		D03C3C0D292D46E000BE862B /* time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = time.swift; sourceTree = "<group>"; };
+		D051356229278CC500F043C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D05135632927A67600F043C5 /* PedometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerManager.swift; sourceTree = "<group>"; };
+		D05135652927DAF900F043C5 /* keysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keysModel.swift; sourceTree = "<group>"; };
 		D093EC8329240F1500D7147E /* Pacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D093EC8629240F1500D7147E /* PacerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacerApp.swift; sourceTree = "<group>"; };
 		D093EC8829240F1500D7147E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +68,17 @@
 		D093EC8529240F1500D7147E /* Pacer */ = {
 			isa = PBXGroup;
 			children = (
+				D051356229278CC500F043C5 /* Info.plist */,
 				D093EC8629240F1500D7147E /* PacerApp.swift */,
+				D05135652927DAF900F043C5 /* keysModel.swift */,
+				D03C3C0B292BD86600BE862B /* ProfileSelection.swift */,
+				D05135632927A67600F043C5 /* PedometerManager.swift */,
 				D093EC8829240F1500D7147E /* ContentView.swift */,
+				D02D5C742926984800CDB455 /* PedometerView.swift */,
+				D03C3C0D292D46E000BE862B /* time.swift */,
+				D03C3C05292BC87B00BE862B /* CircularProgressView.swift */,
+				D02D5C702926971600CDB455 /* TabBarView.swift */,
+				D02D5C722926980800CDB455 /* StatisticsView.swift */,
 				D093EC8A29240F1600D7147E /* Assets.xcassets */,
 				D093EC8C29240F1600D7147E /* Preview Content */,
 			);
@@ -138,6 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D093EC8929240F1500D7147E /* ContentView.swift in Sources */,
+				D05135642927A67600F043C5 /* PedometerManager.swift in Sources */,
+				D03C3C0C292BD86600BE862B /* ProfileSelection.swift in Sources */,
+				D03C3C06292BC87B00BE862B /* CircularProgressView.swift in Sources */,
+				D02D5C732926980800CDB455 /* StatisticsView.swift in Sources */,
+				D02D5C752926984800CDB455 /* PedometerView.swift in Sources */,
+				D05135662927DAF900F043C5 /* keysModel.swift in Sources */,
+				D02D5C712926971600CDB455 /* TabBarView.swift in Sources */,
+				D03C3C0E292D46E000BE862B /* time.swift in Sources */,
 				D093EC8729240F1500D7147E /* PacerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +304,8 @@
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pacer/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "\"We are using motion usage in order to track your step count.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +335,8 @@
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pacer/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "\"We are using motion usage in order to track your step count.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

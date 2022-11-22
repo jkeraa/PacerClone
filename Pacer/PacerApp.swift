@@ -11,7 +11,8 @@ import SwiftUI
 struct PacerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(PedometerManager())
+                
         }
     }
 }
