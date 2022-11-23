@@ -12,7 +12,7 @@ import Charts
 
 
 struct PedometerView: View {
-    
+    typealias CMPedometerHandler = (CMPedometerData?, Error?) -> Void
    
     @EnvironmentObject var uau: PedometerManager
    
@@ -139,18 +139,8 @@ struct PedometerView: View {
                             }
                             
                             
-                            if CMPedometer.isStepCountingAvailable(){
-                                uau.pedometer.startUpdates(from: Date().dayBefore) { (data,error) in
-                                    if error == nil {
-                                        if let response = data {
-                                            DispatchQueue.main.async {
-                                                uau.z = Int(response.numberOfSteps)
                             
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                           
                             
                         }
                     }
@@ -185,13 +175,28 @@ extension Date {
     static var tomorrow:  Date { return Date().dayAfter }
        
     var dayBefore: Date {
-           return Calendar.current.date(byAdding: .day, value: -4, to: noon)!
+           return Calendar.current.date(byAdding: .day, value: -1, to: mattina)!
+       }
+    var dayBefore2: Date {
+           return Calendar.current.date(byAdding: .day, value: -2, to: mattina)!
+       }
+    var dayBefore3: Date {
+           return Calendar.current.date(byAdding: .day, value: -3, to: mattina)!
+       }
+    var dayBefore4: Date {
+           return Calendar.current.date(byAdding: .day, value: -4, to: mattina)!
+       }
+    var dayBefore5: Date {
+           return Calendar.current.date(byAdding: .day, value: -5, to: mattina)!
+       }
+    var dayBefore6: Date {
+           return Calendar.current.date(byAdding: .day, value: -6, to: mattina)!
        }
        var dayAfter: Date {
            return Calendar.current.date(byAdding: .day, value: 1, to: noon)!
        }
        var noon: Date {
-           return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
+           return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: self)!
        }
    
        var month: Int {

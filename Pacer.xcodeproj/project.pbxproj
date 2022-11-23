@@ -75,10 +75,10 @@
 				D05135632927A67600F043C5 /* PedometerManager.swift */,
 				D093EC8829240F1500D7147E /* ContentView.swift */,
 				D02D5C742926984800CDB455 /* PedometerView.swift */,
+				D02D5C722926980800CDB455 /* StatisticsView.swift */,
 				D03C3C0D292D46E000BE862B /* time.swift */,
 				D03C3C05292BC87B00BE862B /* CircularProgressView.swift */,
 				D02D5C702926971600CDB455 /* TabBarView.swift */,
-				D02D5C722926980800CDB455 /* StatisticsView.swift */,
 				D093EC8A29240F1600D7147E /* Assets.xcassets */,
 				D093EC8C29240F1600D7147E /* Preview Content */,
 			);

@@ -15,7 +15,12 @@ class PedometerManager : ObservableObject {
    
     
     @Published var x = -1
-    @Published var z = -1
+    @Published var uno = -1
+    @Published var due = -1
+    @Published var tre = -1
+    @Published var quattro = -1
+    @Published var cinque = -1
+    @Published var sei = -1
     
    
 }
