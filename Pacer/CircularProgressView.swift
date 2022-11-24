@@ -17,27 +17,34 @@ struct CircularProgressView: View {
         ZStack { // 1
                     Circle()
                         .stroke(
-                            Color.gray.opacity(0.5),
+                            Color.black.opacity(0.3),
                             lineWidth: 30
                         )
             Text(String(uau.x))
-            
+          //  Text("1000")
                 .font(.largeTitle)
-                .foregroundColor(Color.blue)
+                .foregroundStyle(LinearGradient(
+                    colors: [Color.blue, Color.cyan],
+                    startPoint: .top, endPoint: .bottom))
             
             
                     Circle() // 2
                 .trim(from: 0, to: Double(uau.x) / 10000)
+               // .trim(from: 0, to: 0.5)
+               // .trim(from: 0, to: 0.5)
                         .stroke(
-                            Color.green.opacity(0.9),
+                            
                             style: StrokeStyle(
                                                     lineWidth: 30,
                                                     lineCap: .round
                                                 )
                         ).rotationEffect(.degrees(-90))
                 .animation(.easeOut, value: progress)
-            
+                .foregroundStyle(LinearGradient(
+                    colors: [Color.blue, Color.cyan],
+                    startPoint: .top, endPoint: .bottom))
                 }.frame(width: 150, height: 150)
+        
     }
 }
 

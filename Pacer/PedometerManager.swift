@@ -22,5 +22,9 @@ class PedometerManager : ObservableObject {
     @Published var cinque = -1
     @Published var sei = -1
     
+    
+    
    
 }
+
+
